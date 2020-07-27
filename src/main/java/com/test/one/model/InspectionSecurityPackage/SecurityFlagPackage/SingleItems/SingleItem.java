@@ -1,4 +1,4 @@
-package com.test.one.model.InspectionSecurityPackage.SecurityFlagPackage;
+package com.test.one.model.InspectionSecurityPackage.SecurityFlagPackage.SingleItems;
 
 import org.springframework.context.annotation.Description;
 import org.springframework.data.annotation.Id;
