@@ -20,4 +20,28 @@ public class ClassificationItem {
         this.urgencyOfRestoration = urgencyOfRestoration;
         this.yearOfUrgencyClassification = yearOfUrgencyClassification;
     }
+
+    public Float getGradeCurrentCondition() {
+        return gradeCurrentCondition;
+    }
+
+    public void setGradeCurrentCondition(Float gradeCurrentCondition) {
+        this.gradeCurrentCondition = gradeCurrentCondition;
+    }
+
+    public String getUrgencyOfRestoration() {
+        return urgencyOfRestoration;
+    }
+
+    public void setUrgencyOfRestoration(String urgencyOfRestoration) {
+        this.urgencyOfRestoration = urgencyOfRestoration;
+    }
+
+    public Date getYearOfUrgencyClassification() {
+        return yearOfUrgencyClassification;
+    }
+
+    public void setYearOfUrgencyClassification(Date yearOfUrgencyClassification) {
+        this.yearOfUrgencyClassification = yearOfUrgencyClassification;
+    }
 }

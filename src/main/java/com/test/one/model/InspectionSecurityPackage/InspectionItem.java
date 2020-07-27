@@ -23,4 +23,36 @@ public class InspectionItem {
         this.nextInspection = nextInspection;
         Inspector = inspector;
     }
+
+    public Date getInspectionConclusion() {
+        return inspectionConclusion;
+    }
+
+    public void setInspectionConclusion(Date inspectionConclusion) {
+        this.inspectionConclusion = inspectionConclusion;
+    }
+
+    public String getInspectionDescription() {
+        return inspectionDescription;
+    }
+
+    public void setInspectionDescription(String inspectionDescription) {
+        this.inspectionDescription = inspectionDescription;
+    }
+
+    public Date getNextInspection() {
+        return nextInspection;
+    }
+
+    public void setNextInspection(Date nextInspection) {
+        this.nextInspection = nextInspection;
+    }
+
+    public Person getInspector() {
+        return Inspector;
+    }
+
+    public void setInspector(Person inspector) {
+        Inspector = inspector;
+    }
 }
