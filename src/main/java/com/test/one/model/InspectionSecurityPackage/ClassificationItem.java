@@ -1,4 +1,4 @@
-package com.test.one.model.InspectionSecurityElements;
+package com.test.one.model.InspectionSecurityPackage;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -13,4 +13,11 @@ public class ClassificationItem {
     Float gradeCurrentCondition;
     String urgencyOfRestoration;
     Date yearOfUrgencyClassification;
+
+    public ClassificationItem(Float gradeCurrentCondition, String urgencyOfRestoration, Date yearOfUrgencyClassification) {
+
+        this.gradeCurrentCondition = gradeCurrentCondition;
+        this.urgencyOfRestoration = urgencyOfRestoration;
+        this.yearOfUrgencyClassification = yearOfUrgencyClassification;
+    }
 }
