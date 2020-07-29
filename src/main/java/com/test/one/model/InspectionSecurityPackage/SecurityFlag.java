@@ -8,19 +8,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class SecurityFlag {
-
     @Id
     String Id;
     String chloridePollution;
-    Infrastructure infrastructure;
-    BuildingComponent buildingComponent;
+    String infrastructure;
+    String buildingComponent;
 
-    public SecurityFlag(String chloridePollution , Infrastructure infrastructure, BuildingComponent buildingComponent) {
+    public SecurityFlag(String chloridePollution, String infrastructure, String buildingComponent) {
         this.chloridePollution = chloridePollution;
         this.infrastructure = infrastructure;
         this.buildingComponent = buildingComponent;
     }
-
 
     public String getChloridePollution() {
         return chloridePollution;
@@ -30,19 +28,19 @@ public class SecurityFlag {
         this.chloridePollution = chloridePollution;
     }
 
-    public Infrastructure getInfrastructure() {
+    public String getInfrastructure() {
         return infrastructure;
     }
 
-    public void setInfrastructure(Infrastructure infrastructure) {
+    public void setInfrastructure(String infrastructure) {
         this.infrastructure = infrastructure;
     }
 
-    public BuildingComponent getBuildingComponent() {
+    public String getBuildingComponent() {
         return buildingComponent;
     }
 
-    public void setBuildingComponent(BuildingComponent buildingComponent) {
+    public void setBuildingComponent(String buildingComponent) {
         this.buildingComponent = buildingComponent;
     }
 }

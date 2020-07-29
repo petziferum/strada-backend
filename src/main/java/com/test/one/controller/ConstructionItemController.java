@@ -8,6 +8,7 @@ import com.test.one.model.InspectionSecurityPackage.InspectionSecurity;
 import com.test.one.service.ConstructionItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -23,7 +24,7 @@ public class ConstructionItemController {
         return ConstructionItemServ.findAllConstructionItem();
     }
 
-    @GetMapping("/createConstructionItem")
+    @PostMapping("/createConstructionItem")
     public void create(String requiredAction, String damageDescription, ConstructionInformation constructioninformationget, ConstructionIdentifier constructionIdentifier, InspectionSecurity inspectionSecurity) {
         ConstructionItemServ.create(requiredAction, damageDescription, constructioninformationget, constructionIdentifier, inspectionSecurity);
     }
