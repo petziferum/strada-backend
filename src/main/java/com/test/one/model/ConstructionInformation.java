@@ -10,7 +10,7 @@ import java.lang.reflect.Array;
 public class ConstructionInformation {
     @Id
     String Id;
-    Integer Budget;
+    Integer budget;
     //Type ConstructionType
     Integer importanceToTraffic;
     Boolean pedestrianBridge;
@@ -19,18 +19,18 @@ public class ConstructionInformation {
 
     public ConstructionInformation(Integer budget, Integer importanceToTraffic, Boolean pedestrianBridge) {
 
-        Budget = budget;
+        this.budget = budget;
         this.importanceToTraffic = importanceToTraffic;
         this.pedestrianBridge = pedestrianBridge;
     }
 
 
     public Integer getBudget() {
-        return Budget;
+        return budget;
     }
 
     public void setBudget(Integer budget) {
-        Budget = budget;
+        this.budget = budget;
     }
 
     public Integer getImportanceToTraffic() {

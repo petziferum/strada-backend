@@ -1,1 +1,19 @@
-1. Date richtig verwendent (classificationitem, inspectionitem)
+
+!  !  !
+1. Date richtig verwenden (classificationitem, inspectionitem)
+!  !  !
+
+optionale params:
+----------------------------------------
+@Document
+public class ConstructionIdentifier {
+    @Id
+    String Id;
+    String constructionNumber;
+    String owner = "undefined";
+
+    public ConstructionIdentifier(String constructionNumber, String owner) {
+        this.constructionNumber = constructionNumber;
+        if(owner != null) {this.owner = owner;}
+    }
+------------------------------------------

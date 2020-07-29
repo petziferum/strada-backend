@@ -9,11 +9,11 @@ public class ConstructionIdentifier {
     @Id
     String Id;
     String constructionNumber;
-    String owner;
+    String owner = "undefined";
 
     public ConstructionIdentifier(String constructionNumber, String owner) {
         this.constructionNumber = constructionNumber;
-        this.owner = owner;
+        if(owner != null) {this.owner = owner;}
     }
 
 

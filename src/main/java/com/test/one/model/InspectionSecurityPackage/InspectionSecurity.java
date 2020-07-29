@@ -14,7 +14,7 @@ public class InspectionSecurity {
     //SecurityFlag damageFlag;
     //SecurityFlag trafficSecurity;
 
-    public InspectionSecurity(ClassificationItem classificationItem, InspectionItem inspectionItem, SecurityFlag damageFlag, SecurityFlag trafficSecurity) {
+    public InspectionSecurity(ClassificationItem classificationItem, InspectionItem inspectionItem) {
 
         this.classificationItem = classificationItem;
         this.inspectionItem = inspectionItem;
